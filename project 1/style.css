@@ -1,0 +1,120 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 14px;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{
+	cursor: pointer;
+}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+
+/****************************/
+
+.wrapper{
+	max-width: 842px;
+	margin: 0 auto;
+	min-height: 100%;
+	font-family: Arial;
+	font-size: 20px;
+	padding: 20px 10px 0;
+}
+.fst-li{
+	margin:  0 0 73px 0;
+}
+.fst-li>*, .sec-li>*{
+	margin: 0 0 20px 20px;
+	color:  #273D46;
+	font-size: 20px;
+}
+.fst-li li:first-child{
+	text-decoration: line-through;
+}
+.fst-li li:last-child{
+	text-transform: uppercase;
+}
+.fst-li>li:before, .sec-li>li:before{
+	content: '';
+	background: url(src/check.svg) no-repeat;
+	padding: 0 30px 0 0;
+	margin:  0 10px 0 0;
+	transition: .3s;
+}
+.sec-li{
+	margin: 0 0 103px 0;
+}
+.sec-li>li:hover:before{
+	background: url(src/red_check.svg) no-repeat;
+
+}
+.sec-li>li:hover{
+	color: #D55A5A;
+	cursor: pointer;
+	transition: .3s;
+}
+.buttons{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 115px 0;
+}
+.btn{
+	background: #80B7B3;
+	color: #fff;
+	width: 199px;
+	height: 44px;
+	box-shadow: 0 6px 20px #80B7B3;
+	border-radius: 30px;
+	transition: .3s;
+}
+.btn span{
+	margin:  0 0 0 11px;
+	font-size: 20px;
+}
+.btn:hover{
+	background: #3A5856;
+}
+.btn:active{
+	background: #707070;
+	box-shadow: none;
+}
+.fst-p, .sec-p{
+	margin: 0 0 38px 0;
+	font-size: 18px;
+}
+.fst-p:first-line{
+	color: #FF0000;
+}
+.sec-p:first-letter{
+	color: #FF0000;
+}
